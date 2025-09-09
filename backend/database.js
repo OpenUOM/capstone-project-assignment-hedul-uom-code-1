@@ -23,7 +23,11 @@ const dbinitialize = async () => {
 }
 
 const readTeachers = async () => {
+<<<<<<< HEAD
     const sql = `SELECT * FROM dummyData`
+=======
+    const sql = `SELECT * FROM teacher`
+>>>>>>> 29855d4 (database function changes)
     return new Promise((resolve, reject) => {
         knex_db
             .raw(sql)
